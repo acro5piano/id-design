@@ -8,7 +8,6 @@ import image3 from '../assets/top-3.png';
 export default class Top extends Component {
   constructor () {
     super()
-
     this.state = {
       slickImage: image1
     }
