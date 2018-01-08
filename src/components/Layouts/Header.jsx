@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.png';
 
 class Header extends Component {
   render() {
     return (
-      <div className="App">
-        <img src={logo} className="App-logo" alt="logo" />
+      <div className="Header">
+        <div className="Header-logo">
+          <a href="/">
+            <img src={logo} className="Header-logo" alt="logo" />
+          </a>
+        </div>
+        <div className="Header-nav">
+          <a className="Header-nav-link" href="/works">Works</a>
+          <a className="Header-nav-link" href="/collections">Collections</a>
+          <a className="Header-nav-link" href="/contact">Contact</a>
+        </div>
       </div>
     );
   }
