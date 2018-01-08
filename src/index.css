@@ -60,7 +60,7 @@ a {
   color: #fff;
   padding: 30vh 80px;
   font-size: 24px;
-  width: 480px;
+  max-width: 480px;
 }
 .Top-slide-index-area {
   position: absolute;
