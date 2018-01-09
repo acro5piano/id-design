@@ -14,6 +14,7 @@ export default class Header extends Component {
           <a className="Header-nav-link" href="/works">Works</a>
           <a className="Header-nav-link" href="/collections">Collections</a>
           <a className="Header-nav-link" href="/contact">Contact</a>
+          <a className="Header-nav-link" href="/career">Career</a>
         </div>
       </div>
     );
