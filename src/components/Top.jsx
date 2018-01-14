@@ -37,19 +37,27 @@ export default class Top extends Component {
   render() {
     return (
       <div className="Top">
-        <div className="Top-slide">
-          <div className="Top-slide-cover">
-            <div className="Top-slide-text">
+        <div className="Top-movie">
+          <div className="Top-movie-cover">
+            <div className="Top-movie-text">
               WE PLAN AND DESIGN
               THE COMMUNITIES AND CITIES
               OF THE FUTURE.
             </div>
-            <div className="Top-slide-video-area">
-              <video loop muted autoPlay className="Top-slide-video">
+            <div className="Top-movie-video-area">
+              <video loop muted autoPlay className="Top-movie-video">
                 <source src={video} />
               </video>
             </div>
           </div>
+        </div>
+        <div className="Top-section">
+          <h2 className="Top-head">
+            Asana’s mission is to help humanity thrive by enabling all teams to work together effortlessly.
+          </h2>
+          <p className="Top-paragraph">
+            Foster + Partners is a global studio for architecture, urbanism and design, all rooted in sustainability and founded by Norman Foster in 1967. Since then, he and the team around him have established an international practice with a worldwide reputation. With offices across the globe, we work as a single studio that is both ethnically and culturally diverse.
+          </p>
         </div>
       </div>
     );

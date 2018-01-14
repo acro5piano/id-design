@@ -43,7 +43,7 @@ a {
 .Top {
 }
 
-.Top-slide {
+.Top-movie {
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -51,13 +51,13 @@ a {
   color: #fff;
   transition: all ease 0.8s;
 }
-.Top-slide-cover {
+.Top-movie-cover {
   position: absolute;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.26);
 }
-.Top-slide-text {
+.Top-movie-text {
   position: absolute;
   color: #fff;
   margin: 30vh 80px;
@@ -66,13 +66,27 @@ a {
   max-width: 480px;
   z-index: 100;
 }
-.Top-slide-video-area {
+.Top-movie-video-area {
   display: block;
   overflow: hidden;
   height: 100%;
   width: 100%;
 }
-.Top-slide-video {
+.Top-movie-video {
   left: 50%;
   top: 50%;
+}
+
+.Top-head {
+  font-size: 24px;
+  text-align: center;
+  margin: 150px auto 0;
+  max-width: 480px;
+}
+.Top-paragraph {
+  font-size: 14px;
+  text-align: center;
+  margin: 50px auto 0;
+  max-width: 1024px;
+  padding: 0 24px;
 }
