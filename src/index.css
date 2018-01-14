@@ -32,6 +32,7 @@ a {
   margin-right: 48px;
   font-size: 16px;
   color: #fff;
+  padding: 8px;
 }
 .Header-logo,
 .Header-nav {
@@ -57,29 +58,21 @@ a {
   background: rgba(0, 0, 0, 0.26);
 }
 .Top-slide-text {
+  position: absolute;
   color: #fff;
-  padding: 30vh 80px;
+  margin: 30vh 80px;
+  /* padding: 30vh 80px; */
   font-size: 24px;
   max-width: 480px;
+  z-index: 100;
 }
-.Top-slide-index-area {
-  position: absolute;
-  bottom: 24px;
+.Top-slide-video-area {
+  display: block;
+  overflow: hidden;
+  height: 100%;
   width: 100%;
-  text-align: center;
-  z-index: 110;
 }
-.Top-slide-index {
-  width: 8px;
-  height: 8px;
-  background: #fff;
-  border-radius: 50%;
-  position: relative;
-  display: inline-block;
-  margin-right: 24px;
-  background: #999;
-}
-.Top-slide-index.is-active {
-  background: #fff;
-  transition: all ease 0.4s;
+.Top-slide-video {
+  left: 50%;
+  top: 50%;
 }
