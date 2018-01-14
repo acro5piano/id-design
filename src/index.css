@@ -1,11 +1,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5;
+  line-height: 1.7;
   font-size: 14px;
   box-sizing: border-box;
 }
@@ -38,9 +37,6 @@ a {
 .Header-nav {
   margin-left: 18px;
   margin-right: 18px;
-}
-
-.Top {
 }
 
 .Top-movie {
@@ -76,17 +72,56 @@ a {
   left: 50%;
   top: 50%;
 }
-
+.Top-section {
+  margin-top: 150px;
+  text-align: center;
+  padding: 0 24px;
+}
 .Top-head {
   font-size: 24px;
-  text-align: center;
-  margin: 150px auto 0;
+  margin: 0 auto;
   max-width: 480px;
 }
 .Top-paragraph {
   font-size: 14px;
-  text-align: center;
   margin: 50px auto 0;
   max-width: 1024px;
-  padding: 0 24px;
+}
+.Top-gallary {
+  max-width: 1024px;
+  margin: auto;
+}
+.Top-gallary-image {
+  margin: 8px;
+  width: 312px;
+  height: 210px;
+}
+.Top-marin {
+  text-align: left;
+}
+.Top-marin-head {
+  margin-top: 100px;
+}
+
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 150px;
+  background: #666;
+  padding: 48px 24px;
+}
+
+.button-primary {
+  padding: 12px 24px;
+  color: #fff;
+  background: #49A2E3;
+  border-radius: 40px;
+}
+.button-primary:hover {
+  color: #49A2E3;
+  background: #ddd;
+  transition: all linear 0.2s;
 }
