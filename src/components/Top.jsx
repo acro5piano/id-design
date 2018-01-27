@@ -6,6 +6,7 @@ import image1 from 'assets/top-1.png';
 import image2 from 'assets/top-2.png';
 import image3 from 'assets/top-3.png';
 import video from 'assets/sample.mp4';
+import logo from 'assets/logo.png';
 
 import gallayImage0 from 'assets/top-gallary-0.jpg';
 import gallayImage1 from 'assets/top-gallary-1.jpg';
@@ -57,6 +58,18 @@ export default class Top extends Component {
               WE PLAN AND DESIGN
               THE COMMUNITIES AND CITIES
               OF THE FUTURE.
+            </div>
+            <div className="Top-movie-logo">
+              <img
+                src={logo}
+                className={'u-full-width'}
+                alt="logo" />
+            </div>
+            <div className="Top-movie-logo mod-right">
+              <img
+                src={logo}
+                className={'u-full-width'}
+                alt="logo" />
             </div>
             <div className="Top-movie-video-area">
               <video loop muted autoPlay className="Top-movie-video">
