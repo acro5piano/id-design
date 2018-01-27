@@ -57,7 +57,7 @@ a {
   border-bottom: solid 1px #eee;
   color: #666;
   height: 64px;
-  transition: all linear 0.2s;
+  transition: all ease 0.5s;
 }
 .Header-nav-link {
   margin-right: 48px;
@@ -111,7 +111,8 @@ a {
   left: 50%;
   top: 50%;
 }
-.Top-section {
+.Top-section,
+.Works-section {
   margin-top: 150px;
   text-align: center;
   padding: 0 24px;

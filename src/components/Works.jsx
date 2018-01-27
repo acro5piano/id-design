@@ -31,23 +31,27 @@ export default class Top extends Component {
   }
 
   componentDidMount() {
-    setInterval(() => {
-      this.setState({
-        slickImage: this._nextImage
-      })
-    }, 5000)
-  }
-
-  get _nextImage() {
-    if (this.state.slickImage.match('top-1')) return image2
-    if (this.state.slickImage.match('top-2')) return image3
-    if (this.state.slickImage.match('top-3')) return image1
+    window.scrollTo(0, 1)
   }
 
   render() {
     return (
-      <div className="Top">
-        Works
+      <div className="Works">
+        <div className="Works-section">
+          <h2 className="Top-head">
+            Works
+          </h2>
+        </div>
+        <div className="Works-section">
+          <div className="Top-gallary">
+            {gallaryImages.map((image, index) =>
+              <img
+                className="Top-gallary-image fadein"
+                key={index}
+                src={image} alt={'gallayImage' + index} />
+            )}
+          </div>
+        </div>
       </div>
     );
   }

@@ -5,9 +5,9 @@ import Top from 'components/Top.jsx';
 import Works from 'components/Works.jsx';
 import {
   BrowserRouter as Router,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
 
 class App extends Component {
   componentDidMount() {

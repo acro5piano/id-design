@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import { _componentDidMount } from 'common'
+
 import image1 from 'assets/top-1.png';
 import image2 from 'assets/top-2.png';
 import image3 from 'assets/top-3.png';
@@ -31,6 +34,7 @@ export default class Top extends Component {
   }
 
   componentDidMount() {
+    _componentDidMount()
     setInterval(() => {
       this.setState({
         slickImage: this._nextImage
@@ -65,24 +69,24 @@ export default class Top extends Component {
           <h2 className="Top-head">
             Asana’s mission is to help humanity thrive by enabling all teams to work together effortlessly.
           </h2>
-          <p className="Top-paragraph fadein">
+          <p className="Top-paragraph">
             Foster + Partners is a global studio for architecture, urbanism and design, all rooted in sustainability and founded by Norman Foster in 1967. Since then, he and the team around him have established an international practice with a worldwide reputation. With offices across the globe, we work as a single studio that is both ethnically and culturally diverse.
           </p>
         </div>
-        <div className="Top-section">
+        <div className="Top-section fadein">
           <div className="Top-gallary">
             {gallaryImages.map((image, index) =>
-              <img className="Top-gallary-image fadein" key={index} src={image} alt={'gallayImage' + index} />
+              <img className="Top-gallary-image" key={index} src={image} alt={'gallayImage' + index} />
             )}
           </div>
         </div>
-        <div className="Top-section">
+        <div className="Top-section fadein">
           <div className="container Top-marin">
             <div className="six columns">
               <h2 className="Top-head Top-marin-head">
                 Work shouldn’t be chaos
               </h2>
-              <p className="Top-paragraph fadein">
+              <p className="Top-paragraph">
                 Foster + Partners is a global studio for architecture, urbanism and design, all rooted in sustainability and founded by Norman Foster in 1967. Since then, he and the team around him have established an international practice with a worldwide reputation. With offices across the globe, we work as a single studio that is both ethnically and culturally diverse.
               </p>
             </div>

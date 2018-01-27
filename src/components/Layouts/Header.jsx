@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from 'assets/logo.png';
 import invertedLogo from 'assets/logo-inverted.png';
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export default class Header extends Component {
   constructor() {
@@ -19,16 +19,20 @@ export default class Header extends Component {
     }, false);
   }
 
+  get _shouldInverted() {
+    return this.state.scrolled || (window.location.pathname !== '/')
+  }
+
   render() {
     return (
-      <div className={'Header' + (this.state.scrolled ? ' is-fixed' : '')}>
+      <div className={'Header' + (this._shouldInverted ? ' is-fixed' : '')}>
         <div className="Header-logo">
-          <NavLink to="/">
+          <Link to="/">
             <img
-              src={this.state.scrolled ? invertedLogo : logo }
-              className={'Header-logo' + (this.state.scrolled ? ' is-inverted' : '')}
+              src={this._shouldInverted ? invertedLogo : logo }
+              className={'Header-logo' + (this._shouldInverted ? ' is-inverted' : '')}
               alt="logo" />
-          </NavLink>
+          </Link>
         </div>
         <div className="Header-nav">
           <NavLink className="Header-nav-link" to="/works">Works</NavLink>
@@ -36,6 +40,6 @@ export default class Header extends Component {
           <NavLink className="Header-nav-link" to="/contact">Contact</NavLink>
         </div>
       </div>
-    );
+    )
   }
 }
