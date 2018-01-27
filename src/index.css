@@ -26,6 +26,13 @@ a {
   background: #ddd;
   transition: all linear 0.2s;
 }
+.fadein {
+  opacity: 0;
+}
+.fadein.is-active {
+  opacity: 1;
+  transition: all ease 0.65s;
+}
 
 .Header {
   position: fixed;

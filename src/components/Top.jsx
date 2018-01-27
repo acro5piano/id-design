@@ -30,24 +30,18 @@ export default class Top extends Component {
     }
   }
 
-  get nextImage() {
-    if (this.state.slickImage.match('top-1')) return image2
-    if (this.state.slickImage.match('top-2')) return image3
-    if (this.state.slickImage.match('top-3')) return image1
-  }
-
   componentDidMount() {
     setInterval(() => {
       this.setState({
-        slickImage: this.nextImage
+        slickImage: this._nextImage
       })
     }, 5000)
   }
 
-  get activeSlideIndex () {
-    if (this.state.slickImage.match('top-1')) return 1
-    if (this.state.slickImage.match('top-2')) return 2
-    if (this.state.slickImage.match('top-3')) return 3
+  get _nextImage() {
+    if (this.state.slickImage.match('top-1')) return image2
+    if (this.state.slickImage.match('top-2')) return image3
+    if (this.state.slickImage.match('top-3')) return image1
   }
 
   render() {
@@ -71,14 +65,14 @@ export default class Top extends Component {
           <h2 className="Top-head">
             Asana’s mission is to help humanity thrive by enabling all teams to work together effortlessly.
           </h2>
-          <p className="Top-paragraph">
+          <p className="Top-paragraph fadein">
             Foster + Partners is a global studio for architecture, urbanism and design, all rooted in sustainability and founded by Norman Foster in 1967. Since then, he and the team around him have established an international practice with a worldwide reputation. With offices across the globe, we work as a single studio that is both ethnically and culturally diverse.
           </p>
         </div>
         <div className="Top-section">
           <div className="Top-gallary">
             {gallaryImages.map((image, index) =>
-              <img className="Top-gallary-image" key={index} src={image} alt={'gallayImage' + index} />
+              <img className="Top-gallary-image fadein" key={index} src={image} alt={'gallayImage' + index} />
             )}
           </div>
         </div>
@@ -88,7 +82,7 @@ export default class Top extends Component {
               <h2 className="Top-head Top-marin-head">
                 Work shouldn’t be chaos
               </h2>
-              <p className="Top-paragraph">
+              <p className="Top-paragraph fadein">
                 Foster + Partners is a global studio for architecture, urbanism and design, all rooted in sustainability and founded by Norman Foster in 1967. Since then, he and the team around him have established an international practice with a worldwide reputation. With offices across the globe, we work as a single studio that is both ethnically and culturally diverse.
               </p>
             </div>
