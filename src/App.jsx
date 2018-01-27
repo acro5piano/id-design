@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import Header from 'components/Layouts/Header.jsx';
 import Footer from 'components/Layouts/Footer.jsx';
 import Top from 'components/Top.jsx';
+import Works from 'components/Works.jsx';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 class App extends Component {
   componentDidMount() {
@@ -12,7 +18,7 @@ class App extends Component {
     for (let element of elements) {
       window.addEventListener('scroll', () => {
         if (window.scrollY + screenOffset > element.offsetTop) {
-          element.classList.add('is-active')
+          element.classList.add('active')
         }
       })
     }
@@ -20,11 +26,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Top />
-        <Footer />
-      </div>
+      <Router>
+        <div className="App">
+          <Header />
+          <Route exact path="/" component={Top}/>
+          <Route exact path="/works" component={Works}/>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

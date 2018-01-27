@@ -87,7 +87,7 @@ export default class Top extends Component {
               </p>
             </div>
             <div className="six columns">
-              <img src={marinImage} />
+              <img className="fade" src={marinImage} alt="marin" />
             </div>
           </div>
         </div>
