@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+
+import { _componentDidMount } from 'common'
+
 import image1 from 'assets/top-1.png';
 import image2 from 'assets/top-2.png';
 import image3 from 'assets/top-3.png';
@@ -31,7 +34,7 @@ export default class Top extends Component {
   }
 
   componentDidMount() {
-    window.scrollTo(0, 1)
+    _componentDidMount()
   }
 
   render() {
@@ -43,12 +46,31 @@ export default class Top extends Component {
           </h2>
         </div>
         <div className="Works-section">
-          <div className="Top-gallary">
+          <div className="Works-gallary">
             {gallaryImages.map((image, index) =>
-              <img
-                className="Top-gallary-image fadein"
-                key={index}
-                src={image} alt={'gallayImage' + index} />
+              <div
+                className="Works-gallary-item fadein"
+                key={index}>
+                <div className="Works-gallary-hover-area">
+                  <div className="Works-gallary-hover-date">
+                    30 November, 2017
+                  </div>
+                  <div className="Works-gallary-hover-description">
+                    Aedas projects recognised for design excellence at A&D Trophy Awards 2017
+                  </div>
+                </div>
+                <img
+                  className="Works-gallary-image"
+                  src={image} alt={'gallayImage' + index} />
+                <div className="Works-gallary-text">
+                  <div className="Works-gallary-date">
+                    30 November, 2017
+                  </div>
+                  <div className="Works-gallary-desctiption">
+                    Aedas projects recognised for design excellence at A&D Trophy Awards 2017
+                  </div>
+                </div>
+              </div>
             )}
           </div>
         </div>

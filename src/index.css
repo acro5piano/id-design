@@ -77,6 +77,16 @@ a {
   height: 50px;
   margin-top: 10px;
 }
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 150px;
+  background: #666;
+  padding: 36px 24px;
+}
 
 .Top-movie {
   width: 100%;
@@ -127,7 +137,8 @@ a {
   margin: 50px auto 0;
   max-width: 1024px;
 }
-.Top-gallary {
+.Top-gallary,
+.Works-gallary {
   max-width: 1024px;
   margin: auto;
 }
@@ -143,13 +154,51 @@ a {
   margin-top: 100px;
 }
 
-.Footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.Works-gallary-item {
+  margin: 12px;
+  width: 425px;
+  height: 396px;
+  display: inline-block;
+  border: solid 1px #ddd;
+  border-radius: 3px;
+}
+.Works-gallary-image {
+  width: 425px;
+  height: 282px;
+}
+.Works-gallary-text {
+  height: 100px;
+  padding: 12px;
+}
+.Works-gallary-date,
+.Works-gallary-desctiption {
+  text-align: left;
+}
+.Works-gallary-date {
+  color: #666;
+  font-size: 12px;
+}
+.Works-gallary-desctiption {
+  margin-top: 12px;
+}
+.Works-gallary-hover-area {
+  position: absolute;
+  width: 425px;
+  height: 396px;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all linear 0.2s;
+  cursor: pointer;
   color: #fff;
-  font-size: 14px;
-  margin-top: 150px;
-  background: #666;
-  padding: 36px 24px;
+}
+.Works-gallary-item:hover .Works-gallary-hover-area {
+  opacity: 0.8;
+}
+.Works-gallary-hover-date,
+.Works-gallary-hover-description {
+  padding: 24px 16px;
+  text-align: left;
+}
+.Works-gallary-hover-description {
+  font-size: 24px;
 }
