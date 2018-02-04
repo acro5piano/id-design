@@ -1,6 +1,6 @@
 export const setFadeinTransition = () => {
   // 表示する閾値。適当に調整する。
-  const screenOffset = window.innerHeight / 1.5
+  const screenOffset = window.innerHeight / 1.3
 
   const elements = document.getElementsByClassName('fadein')
   for (let element of elements) {
@@ -12,4 +12,13 @@ export const setFadeinTransition = () => {
   }
 
   setTimeout(() => window.scrollTo(0, 1), 100)
+}
+
+
+export const setKeyboardShortcut = (key, callback) => {
+  window.addEventListener('keydown', e => {
+    if (e.key === key) {
+      callback()
+    }
+  })
 }
