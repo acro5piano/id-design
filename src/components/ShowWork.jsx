@@ -8,12 +8,29 @@ export default class ShowWork extends Component {
   constructor() {
     super()
     this.state = {
-      activeImage: null,
+      activeImageIndex: 0,
+      modalVisible: false,
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     setFadeinTransition()
+
+    window.addEventListener('keydown', e => {
+      if (e.keyCode === 27) {
+        this._closeModal()
+      }
+    })
+    window.addEventListener('keydown', e => {
+      if (e.keyCode === 37) {
+        this._prevImage()
+      }
+    })
+    window.addEventListener('keydown', e => {
+      if (e.keyCode === 39) {
+        this._nextImage()
+      }
+    })
   }
 
   get _work() {
@@ -21,19 +38,76 @@ export default class ShowWork extends Component {
   }
 
   _onClickImage(index) {
-    this.setState({ activeImage: index })
+    document.getElementsByTagName('body')[0].classList.add('body-lock-scroll')
+    this.setState({
+      activeImageIndex: index,
+      modalVisible: true,
+    })
+  }
+
+  _closeModal() {
+    this.setState({ modalVisible: false })
+    document.getElementsByTagName('body')[0].classList.remove('body-lock-scroll')
+  }
+
+  _onClickModal(e) {
+    // To close modal only when modal click.
+    // This is because the click event can be fired by child components.
+    if (e.target === e.currentTarget) {
+      this._closeModal()
+    }
+  }
+
+  get _canNavigateNextImage() {
+    return this.state.activeImageIndex < this._work.images.length - 1
+  }
+
+  _nextImage() {
+    if (! this._canNavigateNextImage) {
+      return
+    }
+    this.setState({
+      activeImageIndex: this.state.activeImageIndex + 1,
+    })
+  }
+
+  get _canNavigatePrevImage() {
+    return this.state.activeImageIndex > 0
+  }
+
+  _prevImage() {
+    if (! this._canNavigatePrevImage) {
+      return
+    }
+    this.setState({
+      activeImageIndex: this.state.activeImageIndex - 1,
+    })
   }
 
   get _imageOverlay() {
-    const image = this._work.images[this.state.activeImage]
+    const image = this._work.images[this.state.activeImageIndex]
 
-    if (! image) {
-      return
+    let modalClassName = 'ShowWork-image-overlay'
+    if (this.state.modalVisible === false) {
+      modalClassName += ' ShowWork-modal-hidden'
     }
 
+    // This function renders react component every time.
+    // This is because css transition requires constant element existance.
     return (
-      <div className="ShowWork-image-overlay">
-        <img className="ShowWork-image-overlay-image" src={image.src} alt={image.alt} />
+      <div className={modalClassName} onClick={e => this._onClickModal(e)}>
+        <div className="ShowWork-image-overlay-close" onClick={() => this._closeModal()}>
+          <i className="material-icons md-light">close</i>
+        </div>
+        <div className="ShowWork-image-overlay-main">
+          <span className="ShowWork-image-navigation" onClick={() => this._prevImage()}>
+            {this._canNavigatePrevImage && <i className="material-icons md-48 md-light">navigate_before</i> }
+          </span>
+          {image && <img className="ShowWork-image-overlay-image" src={image.src} alt={image.alt} />}
+          <span className="ShowWork-image-navigation" onClick={() => this._nextImage()}>
+            {this._canNavigateNextImage && <i className="material-icons md-48 md-light">navigate_next</i> }
+          </span>
+        </div>
       </div>
     )
   }
