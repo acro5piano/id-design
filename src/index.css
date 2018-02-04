@@ -29,8 +29,8 @@ a {
   border-radius: 40px;
 }
 .button-primary:hover {
-  color: #49A2E3;
-  background: #ddd;
+  color: #fff;
+  background: #58b9ff;
   transition: all linear 0.2s;
 }
 .fadein {

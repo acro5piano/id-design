@@ -41,6 +41,9 @@ export default class Top extends Component {
             )}
           </div>
         </div>
+        <div className="Top-section">
+          <a className="button-primary" href="/works">See All Works</a>
+        </div>
         <div className="Top-section fadein">
           <div className="container Top-marin">
             <div className="six columns">
@@ -55,9 +58,6 @@ export default class Top extends Component {
               <img className="fade u-full-width" src="/images/top-marin.jpg" alt="marin" />
             </div>
           </div>
-        </div>
-        <div className="Top-section">
-          <a className="button-primary" href="/works">See All Works</a>
         </div>
       </div>
     );
