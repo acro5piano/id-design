@@ -59,18 +59,6 @@ export default class Top extends Component {
               THE COMMUNITIES AND CITIES
               OF THE FUTURE.
             </div>
-            <div className="Top-movie-logo">
-              <img
-                src={logo}
-                className={'u-full-width'}
-                alt="logo" />
-            </div>
-            <div className="Top-movie-logo mod-right">
-              <img
-                src={logo}
-                className={'u-full-width'}
-                alt="logo" />
-            </div>
             <div className="Top-movie-video-area">
               <video loop muted autoPlay className="Top-movie-video">
                 <source src={video} />

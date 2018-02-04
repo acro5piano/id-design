@@ -105,22 +105,13 @@ a {
 .Top-movie-text {
   position: absolute;
   color: #fff;
-  margin: 20vh 80px;
+  margin: 40vh 80px;
   font-size: 24px;
   max-width: 480px;
   z-index: 100;
 }
 .Top-movie-cover {
   display: flex;
-}
-.Top-movie-logo {
-  position: absolute;
-  color: #fff;
-  margin-top: 60vh;
-  margin-left: 26%;
-  font-size: 24px;
-  width: 150px;
-  z-index: 100;
 }
 .Top-movie-logo.mod-right {
   margin-left: 60%;
