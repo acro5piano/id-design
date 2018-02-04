@@ -20,55 +20,26 @@
     {
       "thumbnailSrc": "/images/top-gallary-0.jpg",
       "date": "30 November, 2017",
-      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
-    },
-    {
-      "thumbnailSrc": "/images/top-gallary-0.jpg",
-      "date": "30 November, 2017",
-      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
-    },
-    {
-      "thumbnailSrc": "/images/top-gallary-0.jpg",
-      "date": "30 November, 2017",
-      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
-    },
-    {
-      "thumbnailSrc": "/images/top-gallary-0.jpg",
-      "date": "30 November, 2017",
-      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
-    },
-    {
-      "thumbnailSrc": "/images/top-gallary-0.jpg",
-      "date": "30 November, 2017",
-      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
-    },
-    {
-      "thumbnailSrc": "/images/top-gallary-0.jpg",
-      "date": "30 November, 2017",
-      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
-    },
-    {
-      "thumbnailSrc": "/images/top-gallary-0.jpg",
-      "date": "30 November, 2017",
-      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
-    },
-    {
-      "thumbnailSrc": "/images/top-gallary-0.jpg",
-      "date": "30 November, 2017",
-      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
-    },
-    {
-      "thumbnailSrc": "/images/top-gallary-0.jpg",
-      "date": "30 November, 2017",
-      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
-    },
-    {
-      "thumbnailSrc": "/images/top-gallary-0.jpg",
-      "date": "30 November, 2017",
-      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
+      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017",
+      "images": [
+        { "src": "/images/top-gallary-0.jpg", "alt": "hoge" },
+        { "src": "/images/top-gallary-1.jpg", "alt": "hoge" },
+        { "src": "/images/top-gallary-2.jpg", "alt": "hoge" },
+        { "src": "/images/top-gallary-3.jpg", "alt": "hoge" }
+      ]
     },
     {
       "thumbnailSrc": "/images/top-gallary-1.jpg",
+      "date": "30 November, 2017",
+      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
+    },
+    {
+      "thumbnailSrc": "/images/top-gallary-2.jpg",
+      "date": "30 November, 2017",
+      "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
+    },
+    {
+      "thumbnailSrc": "/images/top-gallary-3.jpg",
       "date": "30 November, 2017",
       "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017"
     }

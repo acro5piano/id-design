@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 import { setFadeinTransition } from 'common'
-
 import { works } from 'data'
 
-export default class Top extends Component {
+export default class Works extends Component {
 
   componentDidMount() {
     setFadeinTransition()
@@ -22,15 +22,17 @@ export default class Top extends Component {
           <div className="Works-gallary">
             {works.map((work, index) =>
               <div className="Works-gallary-item fadein" key={index}>
-                <div className="Works-gallary-hover-area">
-                  <div className="Works-gallary-hover-date">
-                    {work.date}
+                <Link to={'/works/' + index}>
+                  <div className="Works-gallary-hover-area">
+                    <div className="Works-gallary-hover-date">
+                      {work.date}
+                    </div>
+                    <div className="Works-gallary-hover-description">
+                      {work.description}
+                    </div>
                   </div>
-                  <div className="Works-gallary-hover-description">
-                    {work.description}
-                  </div>
-                </div>
-                <img className="Works-gallary-image" src={work.thumbnailSrc} alt={work.description} />
+                </Link>
+                <img className="u-full-width" src={work.thumbnailSrc} alt={work.description} />
                 <div className="Works-gallary-text">
                   <div className="Works-gallary-date">
                     {work.date}

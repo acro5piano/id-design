@@ -3,6 +3,7 @@ import Header from 'components/Layouts/Header.jsx';
 import Footer from 'components/Layouts/Footer.jsx';
 import Top from 'components/Top.jsx';
 import Works from 'components/Works.jsx';
+import ShowWork from 'components/ShowWork.jsx';
 import {
   BrowserRouter as Router,
   Route
@@ -30,6 +31,7 @@ class App extends Component {
           <Header />
           <Route exact path="/" component={Top}/>
           <Route exact path="/works" component={Works}/>
+          <Route exact path="/works/:id" component={ShowWork}/>
           <Footer />
         </div>
       </Router>
