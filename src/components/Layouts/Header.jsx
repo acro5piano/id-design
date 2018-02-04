@@ -20,7 +20,7 @@ export default class Header extends Component {
   }
 
   get _shouldInverted() {
-    return this.state.scrolled || (window.location.pathname !== '/')
+    return this.state.scrolled || (window.location.hash !== '#/')
   }
 
   render() {

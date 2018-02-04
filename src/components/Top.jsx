@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { setFadeinTransition } from 'common'
 import { top } from 'data'
+import { Link } from 'react-router-dom'
 
 export default class Top extends Component {
 
@@ -42,7 +43,7 @@ export default class Top extends Component {
           </div>
         </div>
         <div className="Top-section">
-          <a className="button-primary" href="/works">See All Works</a>
+          <Link to="/works" className="button-primary">See All Works</Link>
         </div>
         <div className="Top-section fadein">
           <div className="container Top-marin">
