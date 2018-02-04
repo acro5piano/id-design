@@ -7,7 +7,6 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
-import { withRouter } from 'react-router-dom';
 
 class App extends Component {
   componentDidMount() {

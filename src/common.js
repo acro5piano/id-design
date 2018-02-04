@@ -1,4 +1,4 @@
-export const _componentDidMount = () => {
+export const setFadeinTransition = () => {
   window.scrollTo(0, 1)
   // 表示する閾値。適当に調整する。
   const screenOffset = window.innerHeight / 1.5

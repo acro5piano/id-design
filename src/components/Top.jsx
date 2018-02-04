@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { _componentDidMount } from 'common'
+import { setFadeinTransition } from 'common'
 
 import image1 from 'assets/top-1.png';
 import image2 from 'assets/top-2.png';
@@ -35,7 +35,7 @@ export default class Top extends Component {
   }
 
   componentDidMount() {
-    _componentDidMount()
+    setFadeinTransition()
     setInterval(() => {
       this.setState({
         slickImage: this._nextImage
