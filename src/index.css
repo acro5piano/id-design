@@ -168,7 +168,7 @@ a {
   border-radius: 3px;
 }
 .Works-gallary-image {
-  width: 425px;
+  width: 100%;
   height: 282px;
 }
 .Works-gallary-text {
@@ -206,4 +206,22 @@ a {
 }
 .Works-gallary-hover-description {
   font-size: 24px;
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .Header-nav-link {
+    display: none;
+  }
+  .Works-gallary-item {
+    width: 96%;
+    margin: 2%;
+  }
+  .Works-gallary-image {
+    width: 100%;
+    height: auto;
+  }
+  .Works-gallary-hover-area {
+    display: none;
+  }
 }
