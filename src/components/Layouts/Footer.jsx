@@ -8,8 +8,8 @@ export default class Footer extends Component {
         <div>
           <div>
             TT &amp; T Archi Lab<br />
-            東京都渋谷区代官山町17-1　アドレス代官山A棟3307<br />
-            mail@iddesign.co.jp
+            〒150-0034 東京都渋谷区代官山町17-1　アドレス代官山A棟3307<br />
+            mail@ttntarchilab.com
           </div>
         </div>
         <div>

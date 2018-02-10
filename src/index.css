@@ -142,6 +142,7 @@ body.body-lock-scroll {
   top: 50%;
 }
 .Top-section,
+.Contact-section,
 .Works-section {
   margin-top: 150px;
   text-align: center;
@@ -263,6 +264,12 @@ body.body-lock-scroll {
   margin: auto;
   cursor: pointer;
   width: 5%;
+}
+
+.Contact-table {
+  width: 80%;
+  max-width: 1024px;
+  margin: 24px auto;
 }
 
 /* Mobile */
