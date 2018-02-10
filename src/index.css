@@ -19,9 +19,10 @@ a {
   transition: all ease 0.5s;
 }
 
-.body-lock-scroll {
+body.body-lock-scroll {
   overflow: hidden;
 }
+
 .button-primary {
   padding: 12px 24px;
   color: #fff;

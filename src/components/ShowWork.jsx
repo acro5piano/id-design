@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
-import { setFadeinTransition, setKeyboardShortcut } from 'common'
+import {
+  setFadeinTransition,
+  setKeyboardShortcut,
+  addClassToBody,
+  removeClassFromBody,
+} from 'common'
 import { works } from 'data'
 
 export default class ShowWork extends Component {
@@ -24,7 +29,7 @@ export default class ShowWork extends Component {
   }
 
   _onClickImage(index) {
-    document.getElementsByTagName('body')[0].classList.add('body-lock-scroll')
+    addClassToBody('body-lock-scroll')
     this.setState({
       activeImageIndex: index,
       modalVisible: true,
@@ -33,7 +38,7 @@ export default class ShowWork extends Component {
 
   _closeModal() {
     this.setState({ modalVisible: false })
-    document.getElementsByTagName('body')[0].classList.remove('body-lock-scroll')
+    removeClassFromBody('body-lock-scroll')
   }
 
   _onClickModal(e) {

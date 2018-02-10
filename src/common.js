@@ -14,11 +14,18 @@ export const setFadeinTransition = () => {
   setTimeout(() => window.scrollTo(0, 1), 100)
 }
 
-
 export const setKeyboardShortcut = (key, callback) => {
   window.addEventListener('keydown', e => {
     if (e.key === key) {
       callback()
     }
   })
+}
+
+export const addClassToBody = (className) => {
+  document.getElementsByTagName('body')[0].classList.add(className)
+}
+
+export const removeClassFromBody = (className) => {
+  document.getElementsByTagName('body')[0].classList.remove(className)
 }
