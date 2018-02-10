@@ -1,17 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Footer extends Component {
   render() {
     return (
       <div className="Footer">
         <div>
-          Copyright 2018  TT &amp; T Archi Lab
+          <div>
+            TT &amp; T Archi Lab<br />
+            東京都渋谷区代官山町17-1　アドレス代官山A棟3307<br />
+            mail@iddesign.co.jp
+          </div>
         </div>
         <div>
-          <a className="Header-nav-link" href="/works">Works</a>
-          <a className="Header-nav-link" href="/collections">Collections</a>
-          <a className="Header-nav-link" href="/contact">Contact</a>
-          <a className="Header-nav-link" href="/career">Career</a>
+          <Link className="Header-nav-link" to="/works">Works</Link>
+          <Link className="Header-nav-link" to="/contact">Contact</Link>
         </div>
       </div>
     );

@@ -36,7 +36,6 @@ export default class Header extends Component {
         </div>
         <div className="Header-nav">
           <NavLink className="Header-nav-link" to="/works">Works</NavLink>
-          <NavLink className="Header-nav-link" to="/career">Career</NavLink>
           <NavLink className="Header-nav-link" to="/contact">Contact</NavLink>
         </div>
       </div>
