@@ -83,37 +83,43 @@ export default class ShowWork extends Component {
       modalClassName += ' ShowWork-modal-hidden'
     }
 
-    // We always render Modal.
-    // This is because css transition requires constant element existance.
     return (
-      <div className="u-page-title">
-        <div className={modalClassName} onClick={e => this._onClickModal(e)}>
-          <div className="ShowWork-image-overlay-close" onClick={() => this._closeModal()}>
-            <i className="material-icons md-light">close</i>
-          </div>
-          <div className="ShowWork-image-overlay-main">
-            <span className="ShowWork-image-navigation" onClick={() => this._prevImage()}>
-              {this._canNavigatePrevImage && <i className="material-icons md-48 md-light">navigate_before</i> }
-            </span>
-            {image && <img className="ShowWork-image-overlay-image" src={image.src} alt={image.alt} />}
-            <span className="ShowWork-image-navigation" onClick={() => this._nextImage()}>
-              {this._canNavigateNextImage && <i className="material-icons md-48 md-light">navigate_next</i> }
-            </span>
+      <div className="ShowWork">
+        <div className="ShowWork-eyecatch" style={{backgroundImage: `url(${this._work.thumbnailSrc})`}}>
+          <div className="ShowWork-eyecatch-cover">
+            <div className="ShowWork-eyecatch-text">
+              <h2>{this._work.description}</h2>
+              <p>{this._work.date}</p>
+            </div>
           </div>
         </div>
-        <div className="Works-section">
-          <h2 className="Top-head">
-            {this._work.description}
-            {this._work.date}
-          </h2>
-        </div>
-        <div className="Works-section">
+
           <div className="ShowWork-gallary">
             {this._work.images.map((image, index) =>
               <div className="fadein" key={index} onClick={() => this._onClickImage(index)}>
                 <img className="ShowWork-gallary-image fadein" src={image.src} alt={image.alt} />
               </div>
             )}
+          </div>
+
+        {/*
+         * We always render Modal.
+         * This is because css transition requires constant element existance.
+         */}
+        <div className={modalClassName}>
+          <div className="ShowWork-image-overlay-close" onClick={() => this._closeModal()}>
+            <i className="material-icons md-light">close</i>
+          </div>
+          <div className="ShowWork-image-overlay-main" onClick={e => this._onClickModal(e)}>
+            <span className="ShowWork-image-navigation" onClick={() => this._prevImage()}>
+              {this._canNavigatePrevImage && <i className="material-icons md-48 md-light">navigate_before</i> }
+            </span>
+            <div className="ShowWork-image-overlay-image-wrap">
+              {image && <img className="ShowWork-image-overlay-image" src={image.src} alt={image.alt} />}
+            </div>
+            <span className="ShowWork-image-navigation" onClick={() => this._nextImage()}>
+              {this._canNavigateNextImage && <i className="material-icons md-48 md-light">navigate_next</i> }
+            </span>
           </div>
         </div>
       </div>
