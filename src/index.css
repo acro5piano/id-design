@@ -54,6 +54,13 @@ body.body-lock-scroll {
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
+.u-page-title {
+  margin-top: 150px;
+  margin-bottom: 90px;
+  text-align: center;
+  padding: 0 24px;
+}
+
 .Header {
   position: fixed;
   display: flex;
@@ -142,8 +149,7 @@ body.body-lock-scroll {
   top: 50%;
 }
 .Top-section,
-.Contact-section,
-.Works-section {
+.Contact-section {
   margin-top: 100px;
   text-align: center;
   padding: 0 24px;
@@ -174,6 +180,10 @@ body.body-lock-scroll {
   margin-top: 100px;
 }
 
+.Works-gallary {
+  text-align: center;
+  padding: 0 24px;
+}
 .Works-gallary-item {
   margin: 12px;
   width: 40%;
@@ -251,7 +261,8 @@ body.body-lock-scroll {
 }
 .ShowWork-image-overlay-image {
   position: relative;
-  height: 80%;
+  max-height: 90%;
+  max-width: 85%;
   margin: auto;
   transition: all ease 0.5s;
 }

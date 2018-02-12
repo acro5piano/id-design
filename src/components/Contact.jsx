@@ -4,7 +4,7 @@ export default class Top extends Component {
   render() {
     return (
       <div className="Contact">
-        <div className="Contact-section">
+        <div className="u-page-title">
           <h2 className="Top-head">
             Contact
           </h2>

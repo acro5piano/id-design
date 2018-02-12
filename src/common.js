@@ -11,7 +11,7 @@ export const setFadeinTransition = () => {
     })
   }
 
-  // setTimeout(() => window.scrollTo(0, 1), 100)
+  setTimeout(() => window.scrollTo(0, 1), 100)
 }
 
 export const setKeyboardShortcut = (key, callback) => {

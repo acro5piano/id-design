@@ -86,7 +86,7 @@ export default class ShowWork extends Component {
     // We always render Modal.
     // This is because css transition requires constant element existance.
     return (
-      <div className="Works">
+      <div className="u-page-title">
         <div className={modalClassName} onClick={e => this._onClickModal(e)}>
           <div className="ShowWork-image-overlay-close" onClick={() => this._closeModal()}>
             <i className="material-icons md-light">close</i>

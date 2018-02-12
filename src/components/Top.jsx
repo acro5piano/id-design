@@ -16,7 +16,7 @@ export default class Top extends Component {
         <div className="Top-movie">
           <div className="Top-movie-cover">
             <div className="Top-movie-text">
-              家とは<br />
+              家とは、<br />
               住んでみて、ようやくその良さがわかるもの。<br />
               家族が集う、かけがえのない存在になるもの。
             </div>

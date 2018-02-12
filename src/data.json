@@ -34,14 +34,14 @@
   },
   "works": [
     {
-      "thumbnailSrc": "/images/top-gallary-0.jpg",
+      "thumbnailSrc": "/images/yamh/y02.jpg",
       "date": "30 November, 2017",
       "description": "Aedas projects recognised for design excellence at A&D Trophy Awards 2017",
       "images": [
-        { "src": "/images/top-gallary-0.jpg", "alt": "hoge" },
-        { "src": "/images/top-gallary-1.jpg", "alt": "hoge" },
-        { "src": "/images/top-gallary-2.jpg", "alt": "hoge" },
-        { "src": "/images/top-gallary-3.jpg", "alt": "hoge" }
+        { "src": "/images/yamh/y01.jpg", "alt": "hoge" },
+        { "src": "/images/yamh/y02.jpg", "alt": "hoge" },
+        { "src": "/images/yamh/y03.jpg", "alt": "hoge" },
+        { "src": "/images/yamh/y04.jpg", "alt": "hoge" }
       ]
     },
     {
