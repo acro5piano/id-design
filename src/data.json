@@ -2,12 +2,28 @@
   "top": {
     "images": [
       {
-      "src": "/images/top-gallary-0.jpg",
-      "alt": "Gallary-image-1"
+        "src": "/images/top-gallary-0.jpg",
+        "alt": "Gallary-image-1"
       },
       {
-      "src": "/images/top-gallary-1.jpg",
-      "alt": "Gallary-image-2"
+        "src": "/images/top-gallary-1.jpg",
+        "alt": "Gallary-image-2"
+      },
+      {
+        "src": "/images/top-gallary-2.jpg",
+        "alt": "Gallary-image-3"
+      },
+      {
+        "src": "/images/top-gallary-3.jpg",
+        "alt": "Gallary-image-4"
+      },
+      {
+        "src": "/images/top-gallary-4.jpg",
+        "alt": "Gallary-image-5"
+      },
+      {
+        "src": "/images/top-gallary-5.jpg",
+        "alt": "Gallary-image-6"
       }
     ],
     "videos": [
